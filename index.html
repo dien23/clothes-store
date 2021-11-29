@@ -49,7 +49,7 @@
               </li>
               <li class="nav__menu--item">
                 <a href="#" class="nav__menu--item--link">
-                  <ion-icon name="search-outline"></ion-icon>
+                  <ion-icon onclick="search()" name="search-outline"></ion-icon>
                 </a>
               </li>
               <li class="nav__menu--item">
@@ -58,7 +58,13 @@
                 </a>
               </li>
             </ul>
+            <!-- search -->
+            <div id="search" class="search">
+              <input type="text" id="search-input" placeholder="Tìm kiếm..." />
+              <ion-icon onclick="search()" name="close-outline"></ion-icon>
+            </div>
           </nav>
+
           <!-- nav on mobile -->
           <label for="nav-input" class="nav--icon">
             <ion-icon name="menu-outline"></ion-icon>
@@ -166,8 +172,8 @@
                   />
                   <!-- hover -->
                   <div class="hover">
-                    <a href="#">Xem ngay</a>
-                    <a href="#">thêm vào giỏ</a>
+                    <a onclick="detailPopup()">Xem ngay</a>
+                    <a onclick="detailPopup()">thêm vào giỏ</a>
                   </div>
                 </div>
                 <div class="product__item--img--desc">
@@ -183,8 +189,8 @@
                   />
                   <!-- hover -->
                   <div class="hover">
-                    <a href="#">Xem ngay</a>
-                    <a href="#">thêm vào giỏ</a>
+                    <a onclick="detailPopup()">Xem ngay</a>
+                    <a onclick="detailPopup()">thêm vào giỏ</a>
                   </div>
                 </div>
                 <div class="product__item--img--desc">
@@ -200,8 +206,8 @@
                   />
                   <!-- hover -->
                   <div class="hover">
-                    <a href="#">Xem ngay</a>
-                    <a href="#">thêm vào giỏ</a>
+                    <a onclick="detailPopup()">Xem ngay</a>
+                    <a onclick="detailPopup()">thêm vào giỏ</a>
                   </div>
                 </div>
                 <div class="product__item--img--desc">
@@ -217,8 +223,8 @@
                   />
                   <!-- hover -->
                   <div class="hover">
-                    <a href="#">Xem ngay</a>
-                    <a href="#">thêm vào giỏ</a>
+                    <a onclick="detailPopup()">Xem ngay</a>
+                    <a onclick="detailPopup()">thêm vào giỏ</a>
                   </div>
                 </div>
                 <div class="product__item--img--desc">
@@ -234,8 +240,8 @@
                   />
                   <!-- hover -->
                   <div class="hover">
-                    <a href="#">Xem ngay</a>
-                    <a href="#">thêm vào giỏ</a>
+                    <a onclick="detailPopup()">Xem ngay</a>
+                    <a onclick="detailPopup()">thêm vào giỏ</a>
                   </div>
                 </div>
                 <div class="product__item--img--desc">
@@ -251,8 +257,8 @@
                   />
                   <!-- hover -->
                   <div class="hover">
-                    <a href="#">Xem ngay</a>
-                    <a href="#">thêm vào giỏ</a>
+                    <a onclick="detailPopup()">Xem ngay</a>
+                    <a onclick="detailPopup()">thêm vào giỏ</a>
                   </div>
                 </div>
                 <div class="product__item--img--desc">
@@ -268,8 +274,8 @@
                   />
                   <!-- hover -->
                   <div class="hover">
-                    <a href="#">Xem ngay</a>
-                    <a href="#">thêm vào giỏ</a>
+                    <a onclick="detailPopup()">Xem ngay</a>
+                    <a onclick="detailPopup()">thêm vào giỏ</a>
                   </div>
                 </div>
                 <div class="product__item--img--desc">
@@ -285,8 +291,8 @@
                   />
                   <!-- hover -->
                   <div class="hover">
-                    <a href="#">Xem ngay</a>
-                    <a href="#">thêm vào giỏ</a>
+                    <a onclick="detailPopup()">Xem ngay</a>
+                    <a onclick="detailPopup()">thêm vào giỏ</a>
                   </div>
                 </div>
                 <div class="product__item--img--desc">
@@ -302,8 +308,8 @@
                   />
                   <!-- hover -->
                   <div class="hover">
-                    <a href="#">Xem ngay</a>
-                    <a href="#">thêm vào giỏ</a>
+                    <a onclick="detailPopup()">Xem ngay</a>
+                    <a onclick="detailPopup()">thêm vào giỏ</a>
                   </div>
                 </div>
                 <div class="product__item--img--desc">
@@ -319,8 +325,8 @@
                   />
                   <!-- hover -->
                   <div class="hover">
-                    <a href="#">Xem ngay</a>
-                    <a href="#">thêm vào giỏ</a>
+                    <a onclick="detailPopup()">Xem ngay</a>
+                    <a onclick="detailPopup()">thêm vào giỏ</a>
                   </div>
                 </div>
                 <div class="product__item--img--desc">
@@ -346,8 +352,8 @@
                   />
                   <!-- hover -->
                   <div class="hover">
-                    <a href="#">Xem ngay</a>
-                    <a href="#">thêm vào giỏ</a>
+                    <a onclick="detailPopup()">Xem ngay</a>
+                    <a onclick="detailPopup()">thêm vào giỏ</a>
                   </div>
                 </div>
                 <div class="product__item--img--desc">
@@ -363,8 +369,8 @@
                   />
                   <!-- hover -->
                   <div class="hover">
-                    <a href="#">Xem ngay</a>
-                    <a href="#">thêm vào giỏ</a>
+                    <a onclick="detailPopup()">Xem ngay</a>
+                    <a onclick="detailPopup()">thêm vào giỏ</a>
                   </div>
                 </div>
                 <div class="product__item--img--desc">
@@ -380,8 +386,8 @@
                   />
                   <!-- hover -->
                   <div class="hover">
-                    <a href="#">Xem ngay</a>
-                    <a href="#">thêm vào giỏ</a>
+                    <a onclick="detailPopup()">Xem ngay</a>
+                    <a onclick="detailPopup()">thêm vào giỏ</a>
                   </div>
                 </div>
                 <div class="product__item--img--desc">
@@ -397,8 +403,8 @@
                   />
                   <!-- hover -->
                   <div class="hover">
-                    <a href="#">Xem ngay</a>
-                    <a href="#">thêm vào giỏ</a>
+                    <a onclick="detailPopup()">Xem ngay</a>
+                    <a onclick="detailPopup()">thêm vào giỏ</a>
                   </div>
                 </div>
                 <div class="product__item--img--desc">
@@ -414,8 +420,8 @@
                   />
                   <!-- hover -->
                   <div class="hover">
-                    <a href="#">Xem ngay</a>
-                    <a href="#">thêm vào giỏ</a>
+                    <a onclick="detailPopup()">Xem ngay</a>
+                    <a onclick="detailPopup()">thêm vào giỏ</a>
                   </div>
                 </div>
                 <div class="product__item--img--desc">
@@ -431,8 +437,8 @@
                   />
                   <!-- hover -->
                   <div class="hover">
-                    <a href="#">Xem ngay</a>
-                    <a href="#">thêm vào giỏ</a>
+                    <a onclick="detailPopup()">Xem ngay</a>
+                    <a onclick="detailPopup()">thêm vào giỏ</a>
                   </div>
                 </div>
                 <div class="product__item--img--desc">
@@ -448,8 +454,8 @@
                   />
                   <!-- hover -->
                   <div class="hover">
-                    <a href="#">Xem ngay</a>
-                    <a href="#">thêm vào giỏ</a>
+                    <a onclick="detailPopup()">Xem ngay</a>
+                    <a onclick="detailPopup()">thêm vào giỏ</a>
                   </div>
                 </div>
                 <div class="product__item--img--desc">
@@ -465,8 +471,8 @@
                   />
                   <!-- hover -->
                   <div class="hover">
-                    <a href="#">Xem ngay</a>
-                    <a href="#">thêm vào giỏ</a>
+                    <a onclick="detailPopup()">Xem ngay</a>
+                    <a onclick="detailPopup()">thêm vào giỏ</a>
                   </div>
                 </div>
                 <div class="product__item--img--desc">
@@ -482,8 +488,8 @@
                   />
                   <!-- hover -->
                   <div class="hover">
-                    <a href="#">Xem ngay</a>
-                    <a href="#">thêm vào giỏ</a>
+                    <a onclick="detailPopup()">Xem ngay</a>
+                    <a onclick="detailPopup()">thêm vào giỏ</a>
                   </div>
                 </div>
                 <div class="product__item--img--desc">
@@ -499,8 +505,8 @@
                   />
                   <!-- hover -->
                   <div class="hover">
-                    <a href="#">Xem ngay</a>
-                    <a href="#">thêm vào giỏ</a>
+                    <a onclick="detailPopup()">Xem ngay</a>
+                    <a onclick="detailPopup()">thêm vào giỏ</a>
                   </div>
                 </div>
                 <div class="product__item--img--desc">
@@ -609,6 +615,51 @@
     </div>
     <!-- end main -->
 
+    <!-- start detail -->
+    <div id="modal" class="modal">
+      <div class="popup">
+        <ion-icon onclick="detailPopup()" name="close-outline"></ion-icon>
+        <div class="popup__img">
+          <img
+            src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80"
+          />
+        </div>
+        <div class="popup__info">
+          <div class="popup__info--desc">
+            <h3>đầm nữ xanh lá</h3>
+            <span>120.000đ</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus dolore maiores aut possimus, voluptates nesciunt
+              tempora libero molestias laboriosam ducimus molestiae eligendi,
+              optio ipsum cumque. Eum perspiciatis a optio quam?
+            </p>
+          </div>
+          <div class="popup__btn">
+            <div class="popup__quantity">
+              <button id="decrement" onclick="stepper(this)" class="button">
+                -
+              </button>
+              <input
+                id="my-input"
+                type="number"
+                min="1"
+                max="100"
+                step="1"
+                value="1"
+                readonly
+              />
+              <button id="increment" onclick="stepper(this)" class="button">
+                +
+              </button>
+            </div>
+            <button class="addCard">thêm vào giỏ hàng</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end detail -->
+
     <!-- js -->
     <script src="./js/main.js"></script>
     <!-- icon -->
@@ -622,5 +673,8 @@
     ></script>
     <!-- animation -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

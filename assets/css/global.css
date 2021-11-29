@@ -144,3 +144,135 @@ a {
   color: var(--wc);
   transition: 0.25s;
 }
+
+/* detail */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+#modal.active {
+  display: block;
+}
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 600px;
+  overflow: hidden;
+  padding: 50px;
+  background-color: var(--white);
+  display: flex;
+}
+.popup__img {
+  position: relative;
+  width: 360px;
+  overflow: hidden;
+}
+.popup__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.popup__info {
+  width: calc(100% - 360px);
+  padding: 15px 15px 15px 35px;
+}
+.popup__info--desc {
+  position: relative;
+  width: 100%;
+}
+.popup__info--desc h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.popup__info--desc span {
+  font-size: 2.8rem;
+  font-weight: 400;
+  display: block;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+.popup__info--desc p {
+  height: 135px;
+  overflow: hidden;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777;
+  margin-bottom: 20px;
+}
+.popup__btn {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.popup__quantity {
+  position: relative;
+  display: flex;
+  border: 1px solid #c4c4c4;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  text-align: center;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  background-color: var(--white);
+  color: var(--black);
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.button {
+  color: var(--black);
+  background-color: var(--white);
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+#decrement {
+  padding: 15px 5px 15px 25px;
+  border-radius: 45px 0 0 45px;
+}
+#increment {
+  padding: 15px 25px 15px 5px;
+  border-radius: 0 45px 45px 0;
+}
+.addCard {
+  height: 53px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid #c4c4c4;
+  background-color: var(--white);
+  cursor: pointer;
+  transition: 0.25s;
+}
+.addCard:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+.popup ion-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #c4c4c4;
+}
+.popup ion-icon:hover {
+  color: var(--primary);
+}
