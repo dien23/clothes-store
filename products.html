@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+    <!-- animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- start main -->
+    <div class="main grid">
+      <!-- start navigation -->
+      <div class="header">
+        <div class="grid wide">
+          <nav class="nav">
+            <div class="nav__logo">
+              <a href="/" class="nav__logo--link">Beautique.</a>
+            </div>
+            <ul class="nav__menu">
+              <li class="nav__menu--item">
+                <a href="/" class="nav__menu--item--link">Trang chủ</a>
+              </li>
+              <li class="nav__menu--item">
+                <a href="./products.html" class="nav__menu--item--link"
+                  >Sản phẩm</a
+                >
+              </li>
+              <li class="nav__menu--item">
+                <a href="#" class="nav__menu--item--link">Kết nối</a>
+              </li>
+              <li class="nav__menu--item">
+                <a href="#" class="nav__menu--item--link">Tài khoản</a>
+              </li>
+              <li class="nav__menu--item">
+                <a href="#" class="nav__menu--item--link">
+                  <ion-icon onclick="search()" name="search-outline"></ion-icon>
+                </a>
+              </li>
+              <li class="nav__menu--item">
+                <a href="./cart.html" class="nav__menu--item--link">
+                  <ion-icon name="bag-outline"></ion-icon>
+                </a>
+              </li>
+            </ul>
+            <!-- search -->
+            <div id="search" class="search">
+              <input type="text" id="search-input" placeholder="Tìm kiếm..." />
+              <ion-icon onclick="search()" name="close-outline"></ion-icon>
+            </div>
+          </nav>
+
+          <!-- nav on mobile -->
+          <label for="nav-input" class="nav--icon">
+            <ion-icon name="menu-outline"></ion-icon>
+          </label>
+          <input type="checkbox" id="nav-input" style="display: none" />
+          <label for="nav-input" class="nav--overlay"></label>
+          <!-- menu mobile -->
+          <div class="nav__mobile">
+            <label for="nav-input" class="nav__mobile--close">
+              <ion-icon name="close-outline"></ion-icon>
+            </label>
+            <ul class="nav__mobile--list">
+              <li class="nav__mobile--item">
+                <a href="#">trang chủ</a>
+              </li>
+              <li class="nav__mobile--item">
+                <a href="#">sản phẩm</a>
+              </li>
+              <li class="nav__mobile--item">
+                <a href="#">giỏ hàng</a>
+              </li>
+              <li class="nav__mobile--item">
+                <a href="#">tài khoản</a>
+              </li>
+              <li class="nav__mobile--item">
+                <a href="#">đăng xuất</a>
+              </li>
+            </ul>
+          </div>
+          <!-- end nav mobile -->
+        </div>
+      </div>
+      <!-- end navigation -->
+      <!-- start filter -->
+      <div class="grid wide">
+        <ul class="filter">
+          <li class="filter__item">
+            <a href="#">tất cả</a>
+          </li>
+          <li class="filter__item">
+            <a href="#">Áo</a>
+          </li>
+          <li class="filter__item">
+            <a href="#">QUần</a>
+          </li>
+          <li class="filter__item">
+            <a href="#">Đầm</a>
+          </li>
+          <li class="filter__item">
+            <a href="#">Váy</a>
+          </li>
+        </ul>
+        <div class="row products">
+          <div class="col l-3 m-4 c-6">
+            <div class="product__item">
+              <!-- img -->
+              <div class="product__item--img">
+                <img
+                  src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80"
+                />
+                <!-- hover -->
+                <div class="hover">
+                  <a onclick="detailPopup()">Xem ngay</a>
+                  <a onclick="detailPopup()">thêm vào giỏ</a>
+                </div>
+              </div>
+              <div class="product__item--img--desc">
+                <h4>đầm nữ</h4>
+                <span>120.000đ</span>
+              </div>
+            </div>
+          </div>
+          <div class="col l-3 m-4 c-6">
+            <div class="product__item">
+              <!-- img -->
+              <div class="product__item--img">
+                <img
+                  src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80"
+                />
+                <!-- hover -->
+                <div class="hover">
+                  <a onclick="detailPopup()">Xem ngay</a>
+                  <a onclick="detailPopup()">thêm vào giỏ</a>
+                </div>
+              </div>
+              <div class="product__item--img--desc">
+                <h4>đầm nữ</h4>
+                <span>120.000đ</span>
+              </div>
+            </div>
+          </div>
+          <div class="col l-3 m-4 c-6">
+            <div class="product__item">
+              <!-- img -->
+              <div class="product__item--img">
+                <img
+                  src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80"
+                />
+                <!-- hover -->
+                <div class="hover">
+                  <a onclick="detailPopup()">Xem ngay</a>
+                  <a onclick="detailPopup()">thêm vào giỏ</a>
+                </div>
+              </div>
+              <div class="product__item--img--desc">
+                <h4>đầm nữ</h4>
+                <span>120.000đ</span>
+              </div>
+            </div>
+          </div>
+          <div class="col l-3 m-4 c-6">
+            <div class="product__item">
+              <!-- img -->
+              <div class="product__item--img">
+                <img
+                  src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80"
+                />
+                <!-- hover -->
+                <div class="hover">
+                  <a onclick="detailPopup()">Xem ngay</a>
+                  <a onclick="detailPopup()">thêm vào giỏ</a>
+                </div>
+              </div>
+              <div class="product__item--img--desc">
+                <h4>đầm nữ</h4>
+                <span>120.000đ</span>
+              </div>
+            </div>
+          </div>
+          <div class="col l-3 m-4 c-6">
+            <div class="product__item">
+              <!-- img -->
+              <div class="product__item--img">
+                <img
+                  src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80"
+                />
+                <!-- hover -->
+                <div class="hover">
+                  <a onclick="detailPopup()">Xem ngay</a>
+                  <a onclick="detailPopup()">thêm vào giỏ</a>
+                </div>
+              </div>
+              <div class="product__item--img--desc">
+                <h4>đầm nữ</h4>
+                <span>120.000đ</span>
+              </div>
+            </div>
+          </div>
+          <div class="col l-3 m-4 c-6">
+            <div class="product__item">
+              <!-- img -->
+              <div class="product__item--img">
+                <img
+                  src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80"
+                />
+                <!-- hover -->
+                <div class="hover">
+                  <a onclick="detailPopup()">Xem ngay</a>
+                  <a onclick="detailPopup()">thêm vào giỏ</a>
+                </div>
+              </div>
+              <div class="product__item--img--desc">
+                <h4>đầm nữ</h4>
+                <span>120.000đ</span>
+              </div>
+            </div>
+          </div>
+          <div class="col l-3 m-4 c-6">
+            <div class="product__item">
+              <!-- img -->
+              <div class="product__item--img">
+                <img
+                  src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80"
+                />
+                <!-- hover -->
+                <div class="hover">
+                  <a onclick="detailPopup()">Xem ngay</a>
+                  <a onclick="detailPopup()">thêm vào giỏ</a>
+                </div>
+              </div>
+              <div class="product__item--img--desc">
+                <h4>đầm nữ</h4>
+                <span>120.000đ</span>
+              </div>
+            </div>
+          </div>
+          <div class="col l-3 m-4 c-6">
+            <div class="product__item">
+              <!-- img -->
+              <div class="product__item--img">
+                <img
+                  src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80"
+                />
+                <!-- hover -->
+                <div class="hover">
+                  <a onclick="detailPopup()">Xem ngay</a>
+                  <a onclick="detailPopup()">thêm vào giỏ</a>
+                </div>
+              </div>
+              <div class="product__item--img--desc">
+                <h4>đầm nữ</h4>
+                <span>120.000đ</span>
+              </div>
+            </div>
+          </div>
+          <div class="col l-3 m-4 c-6">
+            <div class="product__item">
+              <!-- img -->
+              <div class="product__item--img">
+                <img
+                  src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80"
+                />
+                <!-- hover -->
+                <div class="hover">
+                  <a onclick="detailPopup()">Xem ngay</a>
+                  <a onclick="detailPopup()">thêm vào giỏ</a>
+                </div>
+              </div>
+              <div class="product__item--img--desc">
+                <h4>đầm nữ</h4>
+                <span>120.000đ</span>
+              </div>
+            </div>
+          </div>
+          <div class="col l-3 m-4 c-6">
+            <div class="product__item">
+              <!-- img -->
+              <div class="product__item--img">
+                <img
+                  src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80"
+                />
+                <!-- hover -->
+                <div class="hover">
+                  <a onclick="detailPopup()">Xem ngay</a>
+                  <a onclick="detailPopup()">thêm vào giỏ</a>
+                </div>
+              </div>
+              <div class="product__item--img--desc">
+                <h4>đầm nữ</h4>
+                <span>120.000đ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end fliter -->
+      <!-- start main -->
+
+      <!-- end main -->
+
+      <!-- start footer -->
+      <footer class="footer">
+        <div class="grid wide">
+          <div class="fbox row">
+            <div class="footer__item">
+              <h2>Beautique.</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                ipsam veniam unde, sed, consectetur blanditiis non neque soluta
+                commodi, et temporibus doloribus reprehenderit quos dignissimos.
+                Odit porro obcaecati dolore excepturi, quas natus esse hic
+                fugiat! Molestias, nam eum commodi aspernatur officiis molestiae
+                sit reiciendis temporibus amet quidem accusantium esse ut.
+              </p>
+            </div>
+            <div class="footer__item">
+              <h3>chăm sóc khách hàng</h3>
+              <ul class="footer__menu">
+                <li class="footer__menu--item">
+                  <a href="#">Liên hệ với chúng tôi</a>
+                </li>
+                <li class="footer__menu--item">
+                  <a href="#">Phương thanh thanh toán</a>
+                </li>
+                <li class="footer__menu--item">
+                  <a href="#">Phương thanh đổi trả</a>
+                </li>
+                <li class="footer__menu--item">
+                  <a href="#">Vận chuyển & Giao hàng</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__item">
+              <h3>điều khoản</h3>
+              <ul class="footer__menu">
+                <li class="footer__menu--item">
+                  <a href="#">điều khoản swe dụng</a>
+                </li>
+                <li class="footer__menu--item">
+                  <a href="#">chính sách bảo mật</a>
+                </li>
+                <li class="footer__menu--item">
+                  <a href="#">chính sách hoàn tiền</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__item">
+              <h3>danh mục</h3>
+              <ul class="footer__menu">
+                <li class="footer__menu--item">
+                  <a href="#">áo nữ</a>
+                </li>
+                <li class="footer__menu--item">
+                  <a href="#">quần nữ</a>
+                </li>
+                <li class="footer__menu--item">
+                  <a href="#">đầm nữ</a>
+                </li>
+                <li class="footer__menu--item">
+                  <a href="#">váy nữ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- end main -->
+
+    <!-- start detail -->
+    <div id="modal" class="modal">
+      <div class="popup">
+        <ion-icon onclick="detailPopup()" name="close-outline"></ion-icon>
+        <div class="popup__img">
+          <img
+            src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80"
+          />
+        </div>
+        <div class="popup__info">
+          <div class="popup__info--desc">
+            <h3>đầm nữ xanh lá</h3>
+            <span>120.000đ</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus dolore maiores aut possimus, voluptates nesciunt
+              tempora libero molestias laboriosam ducimus molestiae eligendi,
+              optio ipsum cumque. Eum perspiciatis a optio quam?
+            </p>
+          </div>
+          <form action="#" class="popup__form">
+            <div class="popup__form--size">
+              <input type="radio" name="size" value="s" /> <span>S</span>
+            </div>
+            <div class="popup__form--size">
+              <input type="radio" name="size" value="m" /> <span>M</span>
+            </div>
+            <div class="popup__form--size">
+              <input type="radio" name="size" value="l" /> <span>L</span>
+            </div>
+            <div class="popup__form--size">
+              <input type="radio" name="size" value="xl" /> <span>XL</span>
+            </div>
+            <div class="popup__form--size">
+              <input type="radio" name="size" value="xxl" /> <span>XXL</span>
+            </div>
+            <div class="popup__form--size">
+              <input type="radio" name="size" value="xxxl" /> <span>XXXL</span>
+            </div>
+          </form>
+          <div class="popup__btn">
+            <div class="popup__quantity">
+              <button id="decrement" onclick="stepper(this)" class="button">
+                -
+              </button>
+              <input
+                id="my-input"
+                type="number"
+                min="1"
+                max="100"
+                step="1"
+                value="1"
+                readonly
+              />
+              <button id="increment" onclick="stepper(this)" class="button">
+                +
+              </button>
+            </div>
+            <button class="addCard">thêm vào giỏ hàng</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end detail -->
+
+    <!-- js -->
+    <script src="./js/main.js"></script>
+    <!-- icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -276,3 +276,24 @@ input[type="number"]::-webkit-inner-spin-button {
 .popup ion-icon:hover {
   color: var(--primary);
 }
+.popup__form {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 0;
+  gap: 8px;
+}
+.popup__form--size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.popup__form--size span {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--black);
+  line-height: 1;
+}

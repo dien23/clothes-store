@@ -17,6 +17,18 @@
     width: 700px;
     max-width: 100%;
     height: 95vh;
+    padding: 20px;
+  }
+  .popup__form {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .popup__btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
 @media (max-width: 739px) {
@@ -50,11 +62,16 @@
     left: 33%;
     flex-direction: column;
     height: 95vh;
+    padding: 10px;
   }
   .popup__img {
     width: 100%;
   }
   .popup__info {
     width: 100%;
+  }
+  .popup__btn {
+    display: flex;
+    flex-direction: column;
   }
 }
